@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13090,7 +13090,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -13113,7 +13113,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing_file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../listings.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;iso-8859-1&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -13133,7 +13133,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">listing_file</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">!=</span> <span class="s1">&#39;url&#39;</span><span class="p">]</span>
@@ -13160,7 +13160,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -13197,7 +13197,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_dict</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">col_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
@@ -13215,7 +13215,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">replacing</span><span class="p">(</span><span class="n">col_name</span><span class="p">,</span> <span class="n">target_dict</span><span class="p">):</span>
@@ -13230,7 +13230,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_table</span><span class="p">(</span><span class="n">col_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
@@ -13258,7 +13258,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bed_gp_table</span> <span class="o">=</span> <span class="n">make_table</span><span class="p">(</span><span class="s1">&#39;bed_type&#39;</span><span class="p">)</span>
@@ -13275,7 +13275,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -13347,7 +13347,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bed_dict</span> <span class="o">=</span> <span class="n">make_dict</span><span class="p">(</span><span class="n">bed_gp_table</span><span class="p">,</span> <span class="s1">&#39;bed_type&#39;</span><span class="p">)</span>
@@ -13364,7 +13364,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -13381,7 +13381,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">replacing</span><span class="p">(</span><span class="s1">&#39;bed_type&#39;</span><span class="p">,</span> <span class="n">bed_dict</span><span class="p">)</span>
@@ -13394,7 +13394,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="p">[</span><span class="s1">&#39;bed_type&#39;</span><span class="p">]</span>
@@ -13410,7 +13410,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -13458,7 +13458,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">room_gp_table</span> <span class="o">=</span> <span class="n">make_table</span><span class="p">(</span><span class="s1">&#39;room_type&#39;</span><span class="p">)</span>
@@ -13475,7 +13475,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -13541,7 +13541,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">room_dict</span> <span class="o">=</span> <span class="n">make_dict</span><span class="p">(</span><span class="n">room_gp_table</span><span class="p">,</span> <span class="s1">&#39;room_type&#39;</span><span class="p">)</span>
@@ -13558,7 +13558,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -13575,7 +13575,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">replacing</span><span class="p">(</span><span class="s1">&#39;room_type&#39;</span><span class="p">,</span> <span class="n">room_dict</span><span class="p">)</span>
@@ -13588,7 +13588,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="p">[</span><span class="s1">&#39;room_type&#39;</span><span class="p">]</span>
@@ -13604,7 +13604,7 @@ Name: bed_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -13652,7 +13652,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">property_gp_table</span> <span class="o">=</span> <span class="n">make_table</span><span class="p">(</span><span class="s1">&#39;property_type&#39;</span><span class="p">)</span>
@@ -13669,7 +13669,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -13933,7 +13933,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">property_dict</span> <span class="o">=</span> <span class="n">make_dict</span><span class="p">(</span><span class="n">property_gp_table</span><span class="p">,</span> <span class="s1">&#39;property_type&#39;</span><span class="p">)</span>
@@ -13950,7 +13950,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
@@ -14003,7 +14003,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">replacing</span><span class="p">(</span><span class="s1">&#39;property_type&#39;</span><span class="p">,</span> <span class="n">property_dict</span><span class="p">)</span>
@@ -14016,7 +14016,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="p">[</span><span class="s1">&#39;property_type&#39;</span><span class="p">]</span>
@@ -14032,7 +14032,7 @@ Name: room_type, Length: 24194, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
@@ -14067,7 +14067,7 @@ Name: property_type, Length: 24194, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
@@ -14116,20 +14116,36 @@ Name: property_type, Length: 24194, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Delete-'$'">Delete '$'<a class="anchor-link" href="#Delete-'$'">&#182;</a></h3>
+<h3 id="Delete-'$'-&amp;-'%'-&amp;-','-inside-numbers">Delete '$' &amp; '%' &amp; ',' inside numbers<a class="anchor-link" href="#Delete-'$'-&amp;-'%'-&amp;-','-inside-numbers">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">listing</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span> 
         <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;VIC&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">listing</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
         <span class="k">pass</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
@@ -14140,17 +14156,17 @@ Name: property_type, Length: 24194, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Convert-f-to-0-and-t-to-1,-nan-to-0">Convert f to 0 and t to 1, nan to 0<a class="anchor-link" href="#Convert-f-to-0-and-t-to-1,-nan-to-0">&#182;</a></h3>
+<h3 id="Convert-f-to-0-and-t-to-1,-nan-to-0">Convert <strong>f</strong> to <strong>0</strong> and <strong>t</strong> to <strong>1</strong>, <strong>nan</strong> to <strong>0</strong><a class="anchor-link" href="#Convert-f-to-0-and-t-to-1,-nan-to-0">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">tf</span> <span class="ow">in</span> <span class="n">listing</span><span class="p">:</span>
-    <span class="k">if</span> <span class="s1">&#39;is_&#39;</span> <span class="ow">in</span> <span class="n">tf</span>  <span class="ow">or</span> <span class="s1">&#39;profile_pic&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;identity_verified&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;require&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;bookable&#39;</span> <span class="ow">in</span> <span class="n">tf</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s1">&#39;is_&#39;</span> <span class="ow">in</span> <span class="n">tf</span>  <span class="ow">or</span> <span class="s1">&#39;has_&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;identity_verified&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;require&#39;</span> <span class="ow">in</span> <span class="n">tf</span> <span class="ow">or</span> <span class="s1">&#39;bookable&#39;</span> <span class="ow">in</span> <span class="n">tf</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Processing column </span><span class="si">{tf}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">listing</span><span class="p">[</span><span class="n">tf</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span>
@@ -14179,6 +14195,7 @@ Name: property_type, Length: 24194, dtype: object</pre>
 Processing column host_has_profile_pic
 Processing column host_identity_verified
 Processing column is_location_exact
+Processing column has_availability
 Processing column requires_license
 Processing column instant_bookable
 Processing column is_business_travel_ready
@@ -14201,7 +14218,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">host_response_time</span> <span class="o">=</span> <span class="n">make_table</span><span class="p">(</span><span class="s1">&#39;host_response_time&#39;</span><span class="p">)</span>
@@ -14218,7 +14235,7 @@ Processing column require_guest_phone_verification
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14290,7 +14307,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="p">[</span><span class="s1">&#39;host_response_time&#39;</span><span class="p">]</span> <span class="o">=</span> \
@@ -14325,7 +14342,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cancel</span> <span class="o">=</span> <span class="n">make_table</span><span class="p">(</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">)</span>
@@ -14342,7 +14359,7 @@ Processing column require_guest_phone_verification
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -14420,7 +14437,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="p">[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">]</span> <span class="o">=</span> \
@@ -14455,7 +14472,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_time</span><span class="p">(</span><span class="n">col_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
@@ -14473,7 +14490,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">convert_time</span><span class="p">(</span><span class="s1">&#39;host_since&#39;</span><span class="p">)</span>
@@ -14482,6 +14499,53 @@ Processing column require_guest_phone_verification
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Delete-empty-zipcode">Delete empty zipcode<a class="anchor-link" href="#Delete-empty-zipcode">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">empty_index</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">listing</span><span class="o">.</span><span class="n">zipcode</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">listing</span><span class="o">.</span><span class="n">zipcode</span><span class="p">[</span><span class="n">z</span><span class="p">])</span> <span class="ow">is</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="n">empty_index</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">empty_index</span><span class="p">:</span>
+    <span class="n">listing</span> <span class="o">=</span> <span class="n">listing</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="n">listing</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="n">empty_index</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">idx</span><span class="p">)]])</span>
+<span class="n">listing</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[60]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(24085, 68)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14501,7 +14565,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span>
@@ -14517,7 +14581,7 @@ Processing column require_guest_phone_verification
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[61]:</div>
 
 
 
@@ -14653,7 +14717,7 @@ Processing column require_guest_phone_verification
       <td>365</td>
       <td>1.0</td>
       <td>365.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>30</td>
       <td>60</td>
       <td>90</td>
@@ -14688,7 +14752,7 @@ Processing column require_guest_phone_verification
       <td>38901</td>
       <td>1.25303e+09</td>
       <td>-1</td>
-      <td>100%</td>
+      <td>100</td>
       <td>0.0</td>
       <td>1</td>
       <td>1.0</td>
@@ -14724,7 +14788,7 @@ Processing column require_guest_phone_verification
       <td>30</td>
       <td>3.0</td>
       <td>30.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>12</td>
       <td>19</td>
       <td>28</td>
@@ -14759,7 +14823,7 @@ Processing column require_guest_phone_verification
       <td>50121</td>
       <td>1.25692e+09</td>
       <td>-1</td>
-      <td>100%</td>
+      <td>100</td>
       <td>0.0</td>
       <td>0</td>
       <td>13.0</td>
@@ -14781,8 +14845,8 @@ Processing column require_guest_phone_verification
       <td>520</td>
       <td>0.0</td>
       <td>159.00</td>
-      <td>1,253.00</td>
-      <td>4,452.00</td>
+      <td>1253.00</td>
+      <td>4452.00</td>
       <td>450.00</td>
       <td>100.00</td>
       <td>2</td>
@@ -14795,7 +14859,7 @@ Processing column require_guest_phone_verification
       <td>27</td>
       <td>3.0</td>
       <td>27.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>15</td>
       <td>23</td>
       <td>48</td>
@@ -14866,7 +14930,7 @@ Processing column require_guest_phone_verification
       <td>200</td>
       <td>2.0</td>
       <td>200.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -14901,7 +14965,7 @@ Processing column require_guest_phone_verification
       <td>65090</td>
       <td>1.26141e+09</td>
       <td>-5</td>
-      <td>100%</td>
+      <td>100</td>
       <td>0.0</td>
       <td>0</td>
       <td>1.0</td>
@@ -14924,7 +14988,7 @@ Processing column require_guest_phone_verification
       <td>0.0</td>
       <td>68.00</td>
       <td>400.00</td>
-      <td>1,900.00</td>
+      <td>1900.00</td>
       <td>NaN</td>
       <td>15.00</td>
       <td>1</td>
@@ -14937,7 +15001,7 @@ Processing column require_guest_phone_verification
       <td>90</td>
       <td>1.0</td>
       <td>90.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>23</td>
       <td>53</td>
       <td>83</td>
@@ -15043,7 +15107,7 @@ Processing column require_guest_phone_verification
       <td>285240939</td>
       <td>1.56563e+09</td>
       <td>-5</td>
-      <td>100%</td>
+      <td>100</td>
       <td>0.0</td>
       <td>0</td>
       <td>6.0</td>
@@ -15079,7 +15143,7 @@ Processing column require_guest_phone_verification
       <td>1125</td>
       <td>5.0</td>
       <td>1125.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>30</td>
       <td>60</td>
       <td>90</td>
@@ -15114,7 +15178,7 @@ Processing column require_guest_phone_verification
       <td>160772288</td>
       <td>1.51197e+09</td>
       <td>-5</td>
-      <td>96%</td>
+      <td>96</td>
       <td>0.0</td>
       <td>0</td>
       <td>19.0</td>
@@ -15150,7 +15214,7 @@ Processing column require_guest_phone_verification
       <td>1125</td>
       <td>14.0</td>
       <td>1125.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>30</td>
       <td>60</td>
       <td>90</td>
@@ -15185,7 +15249,7 @@ Processing column require_guest_phone_verification
       <td>285240939</td>
       <td>1.56563e+09</td>
       <td>-5</td>
-      <td>100%</td>
+      <td>100</td>
       <td>0.0</td>
       <td>0</td>
       <td>6.0</td>
@@ -15221,7 +15285,7 @@ Processing column require_guest_phone_verification
       <td>1125</td>
       <td>5.0</td>
       <td>1125.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>26</td>
       <td>56</td>
       <td>86</td>
@@ -15292,7 +15356,7 @@ Processing column require_guest_phone_verification
       <td>1125</td>
       <td>2.0</td>
       <td>1125.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>28</td>
       <td>58</td>
       <td>88</td>
@@ -15327,7 +15391,7 @@ Processing column require_guest_phone_verification
       <td>50405671</td>
       <td>1.44899e+09</td>
       <td>-1</td>
-      <td>95%</td>
+      <td>95</td>
       <td>0.0</td>
       <td>0</td>
       <td>16.0</td>
@@ -15363,7 +15427,7 @@ Processing column require_guest_phone_verification
       <td>1125</td>
       <td>1.0</td>
       <td>1125.0</td>
-      <td>t</td>
+      <td>1</td>
       <td>28</td>
       <td>58</td>
       <td>88</td>
@@ -15394,7 +15458,7 @@ Processing column require_guest_phone_verification
     </tr>
   </tbody>
 </table>
-<p>24194 rows × 68 columns</p>
+<p>24085 rows × 68 columns</p>
 </div>
 </div>
 
@@ -15426,7 +15490,7 @@ Processing column require_guest_phone_verification
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">listing</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;listing-processed.csv&#39;</span><span class="p">)</span>
